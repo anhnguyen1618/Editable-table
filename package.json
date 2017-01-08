@@ -1,0 +1,39 @@
+{
+  "name": "testNs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --hot --inline",
+    "build": "webpack -p --define process.env.NODE_ENV='\"production\"' --progress --optimize-minimize"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-stage-2": "^6.18.0",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
+    "image-webpack-loader": "^2.0.0",
+    "node-sass": "^3.10.1",
+    "path": "^0.12.7",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-hot-middleware": "^2.13.2",
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0"
+  },
+  "dependencies": {
+    "node-random-name": "^1.0.1",
+    "react": "^15.3.2",
+    "react-bootstrap": "^0.30.5",
+    "react-dom": "^15.3.2",
+    "react-redux": "^4.4.5",
+    "redux": "^3.6.0",
+    "uuid": "^3.0.1"
+  }
+}

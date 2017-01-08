@@ -1,0 +1,76 @@
+body {
+    color: #6e7070 !important;
+    font-family: 'Open Sans', sans-serif;
+    .modal {
+        font-size: 20px;
+        h4 {
+            font-size: 30px;
+        }
+        .modal-header,
+        .modal-body,
+        .modal-footer {
+            border-width: 0px !important;
+            text-align: center;
+        }
+        button {
+            width: 80px;
+        }
+        .modal-footer {
+            margin-bottom: 20px;
+        }
+    }
+    form {
+        margin-bottom: 40px;
+        input,
+        select,
+        button {
+            background-color: #f6f6f6 !important;
+        }
+        .glyphicon-plus {
+            padding: 4px 0px;
+            color: #6e7070;
+        }
+    }
+    .table-striped>tbody>tr:nth-child(odd)>td {
+        background-color: #eef3f9;
+    }
+    table {
+        td {
+            input,
+            select {
+                width: 80% !important;
+            }
+        }
+        #editor {
+            span {
+                font-size: 20px;
+                padding-right: 5px;
+                padding-left: 5px;
+                cursor: pointer;
+            }
+            span:hover {
+                color: #50a7ff;
+            }
+            .glyphicon-pencil {
+                border-style: solid;
+                border-width: 0px 1px 0px 0px;
+            }
+            .isEdited {
+                color: #50a7ff;
+            }
+        }
+    }
+    .pagination {
+        .active {
+            a {
+                background-color: #d6edef !important;
+            }
+        }
+        a {
+            margin: 0px 4px 0px 4px;
+            border-radius: 15px !important;
+            border-width: 0px !important;
+            color: #6e7070 !important;
+        }
+    }
+}
