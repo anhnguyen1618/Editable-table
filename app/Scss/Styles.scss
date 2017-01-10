@@ -1,6 +1,16 @@
 body {
     color: #6e7070 !important;
     font-family: 'Open Sans', sans-serif;
+    nav {
+        height: 80px;
+        background-color: #00aebe !important;
+        border-radius: 0px !important;
+        border-width: 0px !important;
+        img {
+            height: 80px !important;
+            padding-left: 15px;
+        }
+    }
     .modal {
         font-size: 23px;
         h4 {
@@ -46,6 +56,7 @@ body {
         }
     }
     h1 {
+        margin-top: 40px;
         margin-bottom: 40px;
     }
     form {
