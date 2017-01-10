@@ -6,11 +6,11 @@ const TableHeader = (props) => {
     const { sort, sortBy, sortOrder } = props;
     return <thead>
 				<tr>
-		      		{["Name", "Gender", "Age"].map((title)=><th key={title} className={title === "Name"? "col-md-4" :"col-md-3"}>					     
-			      		<span onClick={ sort(sortBy, sortOrder) }>{title}</span>	
+		      		{["Name", "Gender", "Age"].map((title)=><th key={title} className={title === "Name"? "col-md-6" :"col-md-2"}>					     
+			      		<span className="title" onClick={ sort(sortBy, sortOrder) }>{title}</span>	
 				      	{title.toLowerCase() === sortBy ? <span 
 				      		className={"glyphicon glyphicon-sort-by-attributes"+(sortOrder === "descending" ? "-alt" : "")}
-				      		></span> : null} 				      				
+				      		></span> : <span className="glyphicon glyphicon-align-left"></span>} 				      				
 				    </th>)}
 				    <th className="col-md-2" id="edit"></th>
 				</tr>

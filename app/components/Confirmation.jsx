@@ -2,7 +2,7 @@ import React from 'react';
 import { Modal, Button } from 'react-bootstrap';
 import { connect } from 'react-redux';
 const Confirmation = (props) => {
-    return <Modal show={props.show} onHide={props.hide}>
+    return <Modal show={props.show} onHide={props.hide} >
 		    	<Modal.Header>
 			        <Modal.Title id="contained-modal-title">Remove person</Modal.Title>
 			    </Modal.Header>

@@ -5,7 +5,7 @@ import Row from './Row.jsx';
 
 const Table = (props) => {
     return <div className="row">
-	    		<div className="col-md-8 col-md-offset-2">
+	    		<div className="col-lg-8 col-lg-offset-2">
 			        <table className="table table-striped">
 			        	<TableHeader/>
 					    <tbody>

@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 
 const Box = (props) => {
     return <td >
-			{props.isEdited ? <Input {...props}/>: <span onClick={props.onEdit(props.type)} >{props.value}</span> }
+			{props.isEdited ? <Input {...props}/>: <span onClick={props.onEdit(props.type)}>{props.value}</span> }
 			</td>
 }
 

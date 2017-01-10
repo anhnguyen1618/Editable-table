@@ -25,8 +25,10 @@ export class Row extends React.Component {
             <tr>
 				{infos.map(info => <Box key={id_generator()} {...info} {...passProps} updateInfo={this.updateInfo(info.type)}/>)}
 				<td id="editor">
-					<span onClick={this.onEdit("name")} className={"glyphicon glyphicon-pencil "+(isEdited ? "isEdited" : null)}/>
-					<span onClick={() => this.props.deletePeople(id)} className="glyphicon glyphicon-remove"/>			
+					<div>
+						<span onClick={this.onEdit("name")} className={"glyphicon glyphicon-pencil "+(isEdited ? "isEdited" : null)}/>
+						<span onClick={() => this.props.deletePeople(id)} className="glyphicon glyphicon-remove"/>	
+					</div>		
 				</td>
 			</tr>
         );

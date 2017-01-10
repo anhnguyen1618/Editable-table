@@ -2,9 +2,9 @@ body {
     color: #6e7070 !important;
     font-family: 'Open Sans', sans-serif;
     .modal {
-        font-size: 20px;
+        font-size: 23px;
         h4 {
-            font-size: 30px;
+            font-size: 35px;
         }
         .modal-header,
         .modal-body,
@@ -12,41 +12,143 @@ body {
             border-width: 0px !important;
             text-align: center;
         }
+        @media screen and (max-width: 1000px) {
+            .modal-dialog {
+                width: 90% !important;
+            }
+        }
+        .modal-dialog {
+            width: 49%;
+        }
         button {
-            width: 80px;
+            font-size: 22px;
+            padding: 15px 30px;
+            min-width: 150px;
+            border-width: 0px;
+        }
+        button:first-child {
+            color: #727272;
+            background-color: #d7d7d7;
+            margin-right: 15px;
+        }
+        button:last-child {
+            margin-left: 15px;
+            color: white;
+            background-color: #00adbd;
+        }
+        .modal-header {
+            margin-top: 40px;
+            margin-bottom: 30px;
         }
         .modal-footer {
-            margin-bottom: 20px;
+            margin-top: 30px;
+            margin-bottom: 40px;
         }
     }
-    form {
+    h1 {
         margin-bottom: 40px;
+    }
+    form {
+        margin-bottom: 60px;
         input,
         select,
         button {
             background-color: #f6f6f6 !important;
+            height: 52px !important;
+            font-size: 16px !important;
+        }
+        input {
+            padding-left: 25px;
+        }
+        .col-xs-2 {
+            padding-left: 10px !important;
+            padding-right: 0px !important;
+        }
+        .col-xs-2:nth-child(3) {
+            width: 20%;
+            padding-left: 25px !important;
+        }
+        .col-xs-1 {
+            text-align: right;
+            padding-left: 25px;
+        }
+        select {
+            padding-left: 10px;
         }
         .glyphicon-plus {
-            padding: 4px 0px;
-            color: #6e7070;
+            padding: 5px 8px;
+            color: #9f9f9f;
         }
     }
     .table-striped>tbody>tr:nth-child(odd)>td {
         background-color: #eef3f9;
     }
     table {
+        th {
+            border-bottom-width: 0px !important;
+            .title {
+                padding: 10px 10px 10px 22px;
+                display: inline-block;
+            }
+            font-weight: normal;
+        }
+        tr> th:nth-child(2) {
+            width: 20% !important;
+        }
+        tr> th:nth-child(2) > span {
+            padding-left: 7px !important;
+        }
+        tr> td:nth-child(2) > span {
+            padding-left: 10px !important;
+        }
+        tr> th:nth-child(3) > span {
+            padding-left: 7px;
+        }
+        tr> td:nth-child(3) > span {
+            padding-left: 10px
+        }
+        tr> td:nth-child(3) > input {
+            padding-left: 10px !important;
+            width: 70% !important;
+        }
         td {
+            position: relative !important;
+            border-top-width: 0px !important;
+            font-size: 20px;
+            padding: 5px !important;
+            span {
+                padding: 10px 10px 10px 25px;
+                display: inline-block;
+            }
             input,
             select {
-                width: 80% !important;
+                height: 46px !important;
+                font-size: 20px !important;
+                padding-left: 25px !important;
+                width: 100% !important;
+                border-radius: 0px !important;
+                margin-top: 3px !important;
+            }
+            select {
+                padding-left: 6px !important;
             }
         }
         #editor {
+            text-align: right;
+            color: #cad1d9;
+            div {
+                padding-top: 8px;
+            }
             span {
-                font-size: 20px;
-                padding-right: 5px;
-                padding-left: 5px;
+                font-size: 18px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                padding-right: 10px;
+                padding-left: 10px;
                 cursor: pointer;
+            }
+            span:nth-child(2) {
+                padding-right: 12px;
             }
             span:hover {
                 color: #50a7ff;
@@ -68,9 +170,12 @@ body {
         }
         a {
             margin: 0px 4px 0px 4px;
-            border-radius: 15px !important;
+            border-radius: 20px !important;
+            padding-top: 4px;
+            padding-bottom: 4px;
             border-width: 0px !important;
-            color: #6e7070 !important;
+            color: #656565!important;
+            font-size: 17px;
         }
     }
 }
