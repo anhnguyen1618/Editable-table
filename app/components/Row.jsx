@@ -41,6 +41,8 @@ export class Row extends React.Component {
             this.props.updatePeople(this.infoObj);
         } else {
             // render input fields when switching to edit mode, focus on the input that is clicked
+            const { name, gender, age, id } = this.state;
+            this.infoObj = { name, gender, age, id };
             this.setState(Object.assign({}, this.state, { isEdited: true, isFocused }));
         }
     }
@@ -53,7 +55,7 @@ export class Row extends React.Component {
 }
 
 const validateUpdate = (form) => {
-    if (form.name === "" || form.age < 0) {
+    if (form.name === "" || form.age < 0 || form.age === "") {
         alert("Your form is not valid!");
         return false;
     }
